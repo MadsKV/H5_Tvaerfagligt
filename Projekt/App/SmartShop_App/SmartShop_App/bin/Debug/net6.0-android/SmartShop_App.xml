@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SmartShop_App</name>
+    </assembly>
+    <members>
+        <member name="P:SmartShop_App.ViewModels.BaseViewModel.IsBusy">
+            <inheritdoc cref="F:SmartShop_App.ViewModels.BaseViewModel._isBusy"/>
+        </member>
+        <member name="P:SmartShop_App.ViewModels.BaseViewModel.Title">
+            <inheritdoc cref="F:SmartShop_App.ViewModels.BaseViewModel._title"/>
+        </member>
+        <member name="P:SmartShop_App.ViewModels.LoginPageViewModel.UserName">
+            <inheritdoc cref="F:SmartShop_App.ViewModels.LoginPageViewModel._userName"/>
+        </member>
+        <member name="P:SmartShop_App.ViewModels.LoginPageViewModel.Password">
+            <inheritdoc cref="F:SmartShop_App.ViewModels.LoginPageViewModel._password"/>
+        </member>
+    </members>
+</doc>

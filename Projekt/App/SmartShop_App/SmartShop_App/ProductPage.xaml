@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SmartShop_App.ProductPage"
+             Title="ProductPage"
+             Shell.NavBarIsVisible="True"
+             
+             >
+
+        <Grid Padding="30" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" BackgroundColor="LightGray">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid Padding="0,10" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" BackgroundColor="Gray">
+            <StackLayout Spacing="20" HorizontalOptions="Start" VerticalOptions="Center">
+                <!-- <Button Text="Profile" BackgroundColor="#58D68D" TextColor="White" FontAttributes="Bold" CornerRadius="30" WidthRequest="15" HeightRequest="15" Margin="0,15,0,0"/> -->
+                <ImageButton Source="search.png" Aspect="AspectFit" WidthRequest="25" HeightRequest="25"/>
+                <ImageButton Source="location.png" Aspect="AspectFit" WidthRequest="25" HeightRequest="25" Clicked="OnGeoLocation"/>
+                <ImageButton Source="profile.png" Aspect="AspectFit" WidthRequest="15" HeightRequest="15" Clicked="ProfilePageBtn_ClickedAsync" />
+                <ImageButton Source="lock.png" Aspect="AspectFit" WidthRequest="15" HeightRequest="15" Clicked="OrderPageBtn_ClickedAsync"/>
+
+                <!--<ScrollView HeightRequest="150">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+                        <Label Text="Previous selected item:" />
+                        <Label x:Name="previousSelectedItemLabel"
+                           Grid.Column="1" />
+                        <Label Grid.Row="1"
+                           Text="Current selected item:" />
+                        <Label x:Name="currentSelectedItemLabel"
+                           Grid.Row="1"
+                           Grid.Column="1" />
+                    </Grid>
+                </ScrollView>-->
+            </StackLayout>
+            <StackLayout Spacing="0" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="Black">
+                <Label Text="SMART" TextColor="#2ECC71" FontFamily="ThemeFont" FontSize="50" HorizontalOptions="Center"/>
+                <Label Text="SHOP" Margin="0,-5,0,0" Opacity="0.5" TextColor="#2ECC71" FontFamily="LightFont" FontSize="50" HorizontalOptions="Center"/>
+                <Label Text="Products" Margin="0,-5,0,0" Opacity="0.2" TextColor="White" FontFamily="LightFont" FontSize="30" HorizontalOptions="Center"/>
+            </StackLayout>
+        </Grid>
+            
+        <CollectionView x:Name="productList" Margin="0,40,0,0" Grid.Row="1" ItemsSource="{Binding Products}" SelectionMode="Multiple" SelectedItem="{Binding SelectedProduct}"
+                            VerticalScrollBarVisibility="Never" SelectionChangedCommand="{Binding SelectionCommand}">
+                <CollectionView.ItemsLayout>
+                    <GridItemsLayout Orientation="Vertical" VerticalItemSpacing="20" HorizontalItemSpacing="20" Span="2"/>
+                </CollectionView.ItemsLayout>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                    <Grid Padding="10"  WidthRequest="145" HeightRequest="160">
+                        <Grid.RowDefinitions>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+                            <Image Aspect="AspectFill" Source="soon.png" Margin="10" WidthRequest="125" HeightRequest="110" HorizontalOptions="Center" VerticalOptions="Center"  />
+                            <Label Grid.Row="1" Text="{Binding productName}" TextColor="#f98522" FontFamily="ThemeFont" VerticalOptions="End" HorizontalOptions="Start" />
+                            <Label Grid.Row="1" Text="{Binding productPrice}" TextColor="White" FontFamily="ThemeFont" VerticalOptions="End" HorizontalOptions="End" />
+                            <Button Grid.Row="2" Text="Add to Cart" TextColor="White" FontFamily="ThemeFont" VerticalOptions="End" HorizontalOptions="End" CornerRadius="30"/>
+                            
+                    </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+    </Grid>
+</ContentPage>

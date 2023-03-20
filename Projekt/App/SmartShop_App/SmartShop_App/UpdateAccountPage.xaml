@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SmartShop_App.UpdateAccountPage"
+             Title="UpdateAccountPage"
+             Shell.NavBarIsVisible="True">
+    <ScrollView>
+            <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" Margin="0,20,0,0" Padding="0">
+            <Frame BackgroundColor="Transparent" BorderColor="LightGreen" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30">
+                <StackLayout>
+                    <Label Margin="10,0,10,10" Text="Want to change your account credentials?" FontSize="24" />
+                    <Label Margin="10,0,10,10" Text="type your changes in the input fields in correct format" FontSize="24" />
+                    <Label Margin="10,0,10,10" Text="All fields MUST be filled out" FontSize="24" TextColor="Red" Opacity="0.5" FontAttributes="Italic"/>
+                    
+                </StackLayout>
+            </Frame>
+            <StackLayout Grid.Row="3" Orientation="Vertical" HorizontalOptions="CenterAndExpand">
+                <Frame BackgroundColor="Transparent" BorderColor="LightGreen" Margin="0,15,0,0" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30">
+                    <StackLayout Orientation="Horizontal">
+                        <Frame BackgroundColor="White" HeightRequest="40" WidthRequest="40" CornerRadius="30" Padding="0" Margin="5">
+                            <Image Source="lock.png" Aspect="AspectFill" Margin="0"/>
+                        </Frame>
+                        <Entry x:Name="changePassword" IsPassword="True" Placeholder="Password ex: MyPassword123!" TextColor="Black" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand" Margin="0,0,20,0"/>
+                    </StackLayout>
+                </Frame>
+                <Frame BackgroundColor="Transparent" BorderColor="LightGreen" Margin="0,15,0,0" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30">
+                    <StackLayout Orientation="Horizontal">
+                        <Frame BackgroundColor="White" HeightRequest="40" WidthRequest="40" CornerRadius="30" Padding="0" Margin="5">
+                            <Image Source="lock.png" Aspect="AspectFill" Margin="0"/>
+                        </Frame>
+                        <Entry x:Name="ChangePhoneNumber" IsPassword="True" Placeholder="Phone Number ex: +4529278077 / 29278077" TextColor="Black" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand" Margin="0,0,20,0"/>
+                    </StackLayout>
+                </Frame>
+                <Button x:Name="SubmitBtn" Text="Submit" BackgroundColor="#58D68D" TextColor="White" FontAttributes="Bold" CornerRadius="30" WidthRequest="200" Margin="0,15,0,0" Clicked="SubmitBtn_Clicked"/>
+            </StackLayout>
+        </StackLayout>
+        
+    </ScrollView>
+</ContentPage>

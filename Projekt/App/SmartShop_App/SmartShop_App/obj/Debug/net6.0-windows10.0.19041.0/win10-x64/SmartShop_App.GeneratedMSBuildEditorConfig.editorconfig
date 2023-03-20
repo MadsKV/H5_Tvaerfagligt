@@ -1,0 +1,77 @@
+is_global = true
+build_property.TargetFramework = net6.0-windows10.0.19041.0
+build_property.TargetPlatformMinVersion = 10.0.17763.0
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 9A19103F-16F7-4668-BE54-9A1E7A4F7556
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = SmartShop_App
+build_property.ProjectDir = C:\Users\Mads\Desktop\Github\MadsVK-Dev\Projekt\App\SmartShop_App\SmartShop_App\
+
+[C:/Users/Mads/Desktop/Github/MadsVK-Dev/Projekt/App/SmartShop_App/SmartShop_App/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = SmartShop_App.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[C:/Users/Mads/Desktop/Github/MadsVK-Dev/Projekt/App/SmartShop_App/SmartShop_App/Appshell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = SmartShop_App.Appshell.xaml
+build_metadata.AdditionalFiles.TargetPath = Appshell.xaml
+build_metadata.AdditionalFiles.RelativePath = Appshell.xaml
+
+[C:/Users/Mads/Desktop/Github/MadsVK-Dev/Projekt/App/SmartShop_App/SmartShop_App/Controls/OrderView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = SmartShop_App.Controls.OrderView.xaml
+build_metadata.AdditionalFiles.TargetPath = Controls\OrderView.xaml
+build_metadata.AdditionalFiles.RelativePath = Controls\OrderView.xaml
+
+[C:/Users/Mads/Desktop/Github/MadsVK-Dev/Projekt/App/SmartShop_App/SmartShop_App/LoginPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = SmartShop_App.LoginPage.xaml
+build_metadata.AdditionalFiles.TargetPath = LoginPage.xaml
+build_metadata.AdditionalFiles.RelativePath = LoginPage.xaml
+
+[C:/Users/Mads/Desktop/Github/MadsVK-Dev/Projekt/App/SmartShop_App/SmartShop_App/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = SmartShop_App.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
+
+[C:/Users/Mads/Desktop/Github/MadsVK-Dev/Projekt/App/SmartShop_App/SmartShop_App/MyOrdersPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = SmartShop_App.MyOrdersPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MyOrdersPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MyOrdersPage.xaml
+
+[C:/Users/Mads/Desktop/Github/MadsVK-Dev/Projekt/App/SmartShop_App/SmartShop_App/ProductPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = SmartShop_App.ProductPage.xaml
+build_metadata.AdditionalFiles.TargetPath = ProductPage.xaml
+build_metadata.AdditionalFiles.RelativePath = ProductPage.xaml
+
+[C:/Users/Mads/Desktop/Github/MadsVK-Dev/Projekt/App/SmartShop_App/SmartShop_App/ProfilePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = SmartShop_App.ProfilePage.xaml
+build_metadata.AdditionalFiles.TargetPath = ProfilePage.xaml
+build_metadata.AdditionalFiles.RelativePath = ProfilePage.xaml
+
+[C:/Users/Mads/Desktop/Github/MadsVK-Dev/Projekt/App/SmartShop_App/SmartShop_App/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = SmartShop_App.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[C:/Users/Mads/Desktop/Github/MadsVK-Dev/Projekt/App/SmartShop_App/SmartShop_App/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = SmartShop_App.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+
+[C:/Users/Mads/Desktop/Github/MadsVK-Dev/Projekt/App/SmartShop_App/SmartShop_App/UpdateAccountPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = SmartShop_App.UpdateAccountPage.xaml
+build_metadata.AdditionalFiles.TargetPath = UpdateAccountPage.xaml
+build_metadata.AdditionalFiles.RelativePath = UpdateAccountPage.xaml

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SmartShop_App.ProfilePage"
+             xmlns:controls="clr-namespace:SmartShop_App"
+             Title="ProfilePage"
+             Shell.NavBarIsVisible="True"
+             >
+
+    <ScrollView>
+        <StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Margin="0,60,0,0" Padding="0">
+                <Label Text="Delete Account?" TextColor="DarkGray" FontSize="Small"/>
+            </StackLayout>
+
+            <Button x:Name="deleteBtn" Text="Delete Account" BackgroundColor="#58D68D" TextColor="White" FontAttributes="Bold" CornerRadius="30" WidthRequest="200" Margin="0,15,0,0" Clicked="deleteBtn_Clicked"></Button>
+            
+            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Margin="0,60,0,0" Padding="0">
+                <Label Text="Want to update your account?" TextColor="DarkGray" FontSize="Small"/>
+            </StackLayout>
+
+            <Button x:Name="updateBtn" Text="Update Account" BackgroundColor="#58D68D" TextColor="White" FontAttributes="Bold" CornerRadius="30" WidthRequest="200" Margin="0,15,0,0" Clicked="updateBtn_Clicked"></Button>
+
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

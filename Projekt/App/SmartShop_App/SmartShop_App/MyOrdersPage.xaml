@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SmartShop_App.MyOrdersPage"
+             xmlns:controls="clr-namespace:SmartShop_App.Controls"
+             Title="MyOrdersPage"
+             Shell.NavBarIsVisible="True">
+
+
+
+    <CollectionView x:Name="ListOrders" Margin="0,40,0,0" Grid.Row="1" SelectionMode="Multiple"
+                            VerticalScrollBarVisibility="Never">
+        <CollectionView.ItemsLayout>
+            <GridItemsLayout Orientation="Vertical" VerticalItemSpacing="20" HorizontalItemSpacing="20" Span="2"/>
+        </CollectionView.ItemsLayout>
+        <CollectionView.ItemTemplate>
+            <DataTemplate>
+                <Grid Padding="10"  WidthRequest="145" BackgroundColor="Gray">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Label Grid.Row="0" Text="{Binding OrderId}" TextColor="#f98522" FontFamily="ThemeFont" VerticalOptions="End" HorizontalOptions="Start" />
+                    <ListView Grid.Row="1" ItemsSource="{Binding Details}" HeightRequest="200" BackgroundColor="HotPink" SelectionMode="None"> 
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <FlexLayout>
+                                        <Label Text="{Binding shippingAddress, FallbackValue='Abcd'} " FlexLayout.Grow="1"></Label>
+                                        <Label Text="{Binding billingAddress, FallbackValue='Abcd \n hejsa \n'}" FlexLayout.Grow="1"></Label>
+                                    </FlexLayout>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+
+                    </ListView>
+                    <Button Grid.Row="2" Text="Remove to Cart" TextColor="White" FontFamily="ThemeFont" VerticalOptions="End" HorizontalOptions="End" CornerRadius="30"/>
+                </Grid>
+            </DataTemplate>
+        </CollectionView.ItemTemplate>
+    </CollectionView>
+    
+    
+    
+    <!--<StackLayout>
+        <ListView x:Name="ListOrders" BackgroundColor="Transparent" SeparatorColor="Silver" SelectionMode="Single" ItemSelected="OrderSelected">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <VerticalStackLayout>
+                            --><!--<Label Text="{Binding OrderId }"></Label>
+                            <Label Text="{Binding OrderDetailId}"></Label>
+                            <Label Text="{Binding orderStatus }"></Label>
+                            <Label Text="{Binding orderAmount}"></Label>
+                            <Label Text="{Binding billingAddress}"></Label>
+                            <Label Text="{Binding shippingAddress}"></Label>
+                            <Label Text="{Binding shippingType}"></Label>--><!--
+                        </VerticalStackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>-->
+    
+    
+</ContentPage>
